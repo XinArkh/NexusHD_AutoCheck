@@ -8,5 +8,5 @@ Users can gain magic coins (for downloading) by signing in every day.
 
 ## TODO
 
-1. Optimize the functions and the coding style of NexusHD Class in nhd.py
+1. Optimize the functions and the coding style of NexusHD Class in nhd.py；
 2. Linux script to automatically run nhd.py.
