@@ -2,6 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 
+import time
 import requests
 from selenium import webdriver
 
@@ -42,8 +43,11 @@ class NexusHD:
                 print(name, 'wrong', '\n', e)
 
         driver.get('http://www.nexushd.org/signin.php')
-        driver.find_element_by_tag_name('textarea').send_keys(' [em4] ')
-        driver.find_element_by_id('qr').click()
+        try:
+            driver.find_element_by_tag_name('textarea').send_keys(' [em4] ')
+            driver.find_element_by_id('qr').click()
+        except:
+            print('今日已签到：%s' % time.strftime('%Y-%m-%d',time.localtime(time.time())))
         driver.save_screenshot('result.png')
 
         driver.quit()
