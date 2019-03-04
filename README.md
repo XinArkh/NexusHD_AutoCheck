@@ -1,12 +1,11 @@
-# NexusHD_AutoSignIn
+# NexusHD_AutoCheck
 
-This script can automatically sign in NexusHD (NHD).
+自动登录并签到 NexusHD (NHD).
 
-[NHD](http://www.nexushd.org) is a private tracker (PT) site in Zhejiang University, where BT downloading and resources sharing services are provided for students in ZJU.
+[NHD](http://www.nexushd.org)是浙江大学校内 BT 分享网站。
 
-Users can gain magic coins (for downloading) by signing in every day.
+每日签到会获得一定的魔力值，魔力值可用于兑换上传量，进而获得下载 BT 资源的资格。
 
 ## TODO
 
-1. Optimize the functions and the coding style of NexusHD Class in nhd.py；
-2. Linux script to automatically run nhd.py.
+- Linux script to automatically run nhd.py.
